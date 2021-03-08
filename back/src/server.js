@@ -15,8 +15,9 @@ app.post('/register', (req, res) => {
     console.log(req.body)
     if(req.body.name === '1') {
         res.send('O nome não pode ser 1!')
+    } else {
+        res.send('Sucesso!')
     }
-    res.send('Sucesso!')
 })
 
 app.listen(port, () => {
